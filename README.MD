@@ -9,8 +9,6 @@ NodeJS Package for scraping statement (mutasi) in iBank indonesia
 
 
 
-Kenapa saya modif ? karna file originalnya  adalah internet banking versi mobile dan tidak ada nilai saldo akhir pada mutasi nya
-
 
 # Mutasi-Scraper
 
