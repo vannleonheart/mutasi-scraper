@@ -4,7 +4,8 @@
 
 NodeJS Package for scraping statement (mutasi) in iBank indonesia
 
-![image](https://user-images.githubusercontent.com/31664438/130382645-3763dd51-3867-48b9-b671-7cf103507904.png)
+
+![Screenshot 2022-06-02 113138](https://user-images.githubusercontent.com/31664438/171599287-b0048798-064e-436e-8c72-c7ec43d0e29f.png)
 
 
 
@@ -26,6 +27,7 @@ atau
 ```bash
 npm install https://github.com/fdciabdul/mutasi-Scraper
 ```
+
 
 ## Penggunaan
 
@@ -55,15 +57,38 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
+### MANDIRI
+
+```javascript
+
+const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
+(async () => {
+    var result = await scraper.getMandiri();
+    console.log(result);
+})();
+```
+
+### DANAMON
+
+```javascript
+
+const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
+(async () => {
+    var result = await scraper.getDanamon();
+    console.log(result);
+})();
+```
+
 ### CONFIGURATION
 
 ```javascript
 
 const scraper = new ScraperBank("user", "pass" , {
     headless : true , // set false jika ingin memunculkan browser
-    apikey : "GOOGLE-VISION-API-KEY" // set google vision apikey disini
-});
+    apikey : "GOOGLE-VISION-API-KEY" // set google vision apikey disini,
+    userdatadir: "fdciabdul" // folder data 
 ```
+
 # License
 
 [MIT](https://github.com/fdciabdul/BCA-Mutasi-Scraper)
