@@ -12,7 +12,8 @@ NodeJS Package for scraping statement (mutasi) in iBank indonesia
 
 # Mutasi-Scraper
 
-Plugin untuk membantu anda mendapatkan informasi mutasi dari iBanking anda 
+Library untuk membantu anda mendapatkan informasi mutasi dari iBanking anda 
+banyak fungsi yang akan didapatkan dalam jika kalian bisa mengimplementasikannya kedalam kebutuhan yang ada , semisal auto accept payment , auto transfer , auto cek , dsb
 
 ## Cara Install
 
