@@ -55,7 +55,15 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
+### CONFIGURATION
 
+```javascript
+
+const scraper = new ScraperBank("user", "pass" , {
+    headless : true , // set false jika ingin memunculkan browser
+    apikey : "GOOGLE-VISION-API-KEY" // set google vision apikey disini
+});
+```
 # License
 
 [MIT](https://github.com/fdciabdul/BCA-Mutasi-Scraper)
