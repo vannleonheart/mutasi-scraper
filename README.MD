@@ -35,7 +35,7 @@ npm install https://github.com/fdciabdul/mutasi-Scraper
 const  ScraperBank  = require("mutasi-scraper");
 ```
 
-### BCA
+### BCA (working)
 
 ```javascript
 
@@ -46,7 +46,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
-### BRI
+### BRI (err)
 
 ```javascript
 
@@ -57,7 +57,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
-### MANDIRI
+### MANDIRI (err)
 
 ```javascript
 
@@ -68,7 +68,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
-### DANAMON
+### DANAMON (err)
 
 ```javascript
 
@@ -84,9 +84,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 ```javascript
 
 const scraper = new ScraperBank("user", "pass" , {
-    headless : true , // set false jika ingin memunculkan browser
-    apikey : "GOOGLE-VISION-API-KEY" // set google vision apikey disini,
-    userdatadir: "fdciabdul" // folder data 
+    headless : false , // set true jika ingin memunculkan browser
 ```
 
 # License
