@@ -10,7 +10,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "example" : "node ./examples/example"
+    "example": "node ./examples/example"
   },
   "author": "Abdul Muttaqin",
   "license": "MIT",
@@ -23,8 +23,8 @@
     "karma-chrome-launcher": "^3.1.1",
     "puppeteer": "^19.7.5",
     "puppeteer-core": "^19.7.5",
-    "puppeteer-extra": "^3.2.3",
-    "puppeteer-extra-plugin-stealth": "^2.9.0"
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "repository": {
     "type": "git",
