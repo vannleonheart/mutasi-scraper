@@ -16,6 +16,12 @@ NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 Library untuk membantu anda mendapatkan informasi mutasi dari iBanking anda 
 banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedalam kebutuhan yang ada , semisal auto accept payment , auto transfer , auto cek , dsb
 
+# Pre requirements
+
+ - Windows / Linux
+ - Nodejs 16+
+ - Google chrome
+
 ## Cara Install
 
 ```bash
