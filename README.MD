@@ -1,4 +1,4 @@
-@@ -1,100 +0,0 @@
+
 # IBANKING
 [![NPM](https://nodei.co/npm/mutasi-scraper.png?compact=true)](https://npmjs.org/package/mutasi-bca)
 
@@ -33,6 +33,12 @@ npm install https://github.com/fdciabdul/mutasi-Scraper
 
 ```javascript
 const  ScraperBank  = require("mutasi-scraper");
+```
+
+## Test
+
+```bash
+npm run example
 ```
 
 ### BCA (working)
