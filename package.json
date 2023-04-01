@@ -1,11 +1,10 @@
 {
   "name": "mutasi-scraper",
-  "version": "1.8.5",
-  "main": "./lib/module.scraper.class.js",
+  "version": "2.2.3",
+  "main": "index.js",
   "directories": {
     "example": "examples",
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
     "test": "jest",
@@ -17,12 +16,10 @@
   "description": "Scrap all settlement from indonesian banks",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "chrome-paths": "^1.0.1",
     "date-format": "^4.0.10",
     "form-data": "^4.0.0",
-    "karma-chrome-launcher": "^3.1.1",
-    "puppeteer": "^19.7.5",
-    "puppeteer-core": "^19.7.5",
+    "moment": "^2.29.4",
+    "puppeteer": "^19.8.2",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   },

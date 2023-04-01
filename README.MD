@@ -51,14 +51,21 @@ npm run example
 
 ```javascript
 
-const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
-(async () => {
-    var result = await scraper.getBCA("18","5","30","5");
-    console.log(result);
-})();
+const {ScrapBCA} = require('./lib/bank/BCA.class.js');
+
+const user = 'USER';
+const pass = 'PASS';
+
+const scraper = new ScrapBCA(user, pass);
+scraper.getSettlement("1", "3", "24", "3").then((page) => {
+    // tanggalawal,bulanawal,tanggalakhir,bulanakhir
+    console.log(page);
+  }).catch((e) => {
+    console.log(e);
+  });
 ```
 
-### BRI (err)
+### BRI (error)
 
 ```javascript
 
@@ -69,7 +76,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
-### MANDIRI (err)
+### MANDIRI (error)
 
 ```javascript
 
@@ -80,7 +87,7 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 })();
 ```
 
-### DANAMON (err)
+### DANAMON (error)
 
 ```javascript
 
@@ -90,6 +97,10 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
     console.log(result);
 })();
 ```
+
+### NOTE 
+
+guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
 
 ### CONFIGURATION
 
