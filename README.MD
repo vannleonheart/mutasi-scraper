@@ -75,14 +75,9 @@ const scraper = new ScraperBank("user", "pass"); // username dan password akun i
 
 ### MANDIRI (error)
 
-```javascript
+untuk mandiri karna web ibank biasanya mati , kalian bisa pakai yang ini 
 
-const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
-(async () => {
-    var result = await scraper.getMandiri();
-    console.log(result);
-})();
-```
+https://github.com/fdciabdul/MIB-Mutasi-Scraper
 
 ### DANAMON (error)
 
