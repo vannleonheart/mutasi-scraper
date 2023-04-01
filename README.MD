@@ -5,10 +5,7 @@
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
-
 ![Screenshot 2022-06-02 113138](https://user-images.githubusercontent.com/31664438/171599287-b0048798-064e-436e-8c72-c7ec43d0e29f.png)
-
-
 
 
 # Mutasi-Scraper
@@ -38,7 +35,7 @@ npm install https://github.com/fdciabdul/mutasi-Scraper
 ## Penggunaan
 
 ```javascript
-const  ScraperBank  = require("mutasi-scraper");
+const {ScrapBCA} = require('./lib/bank/BCA.class.js');
 ```
 
 ## Test
