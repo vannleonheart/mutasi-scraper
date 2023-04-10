@@ -5,10 +5,10 @@
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
-![Screenshot 2022-06-02 113138](https://user-images.githubusercontent.com/31664438/171599287-b0048798-064e-436e-8c72-c7ec43d0e29f.png)
+![Screenshot 2022-06-02 113138](https://user-images.githubusercontent.com/31664438/230940339-b180c200-0749-4db3-a1f2-3deb72359f24.png)
 
 
-# Mutasi-Scraper
+# Mutasi Scraper
 
 Library untuk membantu anda mendapatkan informasi mutasi dari iBanking anda 
 banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedalam kebutuhan yang ada , semisal auto accept payment , auto transfer , auto cek , dsb
@@ -99,7 +99,7 @@ guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika k
 ```javascript
 
 const scraper = new ScraperBank("user", "pass" , {
-    headless : false , // set true jika ingin memunculkan browser
+    headless : false , // set false jika ingin memunculkan browser
 ```
 
 # License
