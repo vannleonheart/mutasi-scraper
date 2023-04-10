@@ -48,7 +48,7 @@ npm run example
 
 ```javascript
 
-const {ScrapBCA} = require('./lib/bank/BCA.class.js');
+const {ScrapBCA} = require('mutasi-scraper');
 
 const user = 'USER';
 const pass = 'PASS';

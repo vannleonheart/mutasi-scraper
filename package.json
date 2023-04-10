@@ -1,6 +1,6 @@
 {
   "name": "mutasi-scraper",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "main": "index.js",
   "directories": {
     "example": "examples",
@@ -17,7 +17,6 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "date-format": "^4.0.10",
-    "form-data": "^4.0.0",
     "moment": "^2.29.4",
     "puppeteer": "^19.8.2",
     "puppeteer-extra": "^3.3.6",
