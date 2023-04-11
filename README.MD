@@ -1,6 +1,6 @@
 
 # IBANKING
-[![NPM](https://nodei.co/npm/mutasi-scraper.png?compact=true)](https://npmjs.org/package/mutasi-bca)
+[![NPM](https://nodei.co/npm/mutasi-scraper.png?compact=true)](https://npmjs.org/package/mutasi-scraper)
 
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
