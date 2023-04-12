@@ -45,6 +45,14 @@ npm run example
 ```
 
 ### BCA (working)
+```mermaid
+graph TD;
+  A[Access ibank.klikbca.com] --> B[Input user and password in login form]
+  B --> C[Access navigation frame]
+  C --> D[Input date mutation from start date to end date]
+  D --> E[Scrap data from mutation page]
+
+```
 
 ```javascript
 
