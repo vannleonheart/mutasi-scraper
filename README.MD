@@ -35,8 +35,11 @@ npm install https://github.com/fdciabdul/mutasi-Scraper
 ## Penggunaan
 
 ```javascript
-const {ScrapBCA} = require('./lib/bank/BCA.class.js');
+const {ScrapBCA} = require('mutasi');
 ```
+
+Fungsi untuk Scraping bank dipisah dari setiap bank , kalian bisa cek apa saja bank yang work untuk di scrap 
+disini [Index File](https://github.com/fdciabdul/mutasi-scraper/blob/main/index.js)
 
 ## Test
 
@@ -106,7 +109,7 @@ const scraper = new ScraperBank("user", "pass" , {
 
 # License
 
-[MIT](https://github.com/fdciabdul/BCA-Mutasi-Scraper)
+[MIT](https://github.com/fdciabdul/mutasi-scraper/)
 
 # Code By
 [Abdul Muttaqin](mailto:abdulmuttaqin456@gmail.com)
