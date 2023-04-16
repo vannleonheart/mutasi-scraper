@@ -109,7 +109,7 @@ const scraper = new ScraperBank("user", "pass" , {
 
 # License
 
-[MIT](https://github.com/fdciabdul/mutasi-scraper/)
+[GPL-3.0 license](https://github.com/fdciabdul/mutasi-scraper/blob/main/LICENSE)
 
 # Code By
 [Abdul Muttaqin](mailto:abdulmuttaqin456@gmail.com)
