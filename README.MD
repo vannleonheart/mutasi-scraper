@@ -49,8 +49,6 @@ npm run example
 
 ### BCA (working)
 
-```
-
 ```javascript
 
 const {ScrapBCA} = require('mutasi-scraper');
