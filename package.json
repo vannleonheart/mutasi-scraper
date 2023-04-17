@@ -1,6 +1,6 @@
 {
   "name": "mutasi-scraper",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "main": "index.js",
   "directories": {
     "example": "examples",
@@ -17,16 +17,13 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "date-format": "^4.0.10",
-    "http-proxy": "^1.18.1",
-    "https-proxy": "^0.0.2",
     "moment": "^2.29.4",
     "puppeteer": "^19.8.2",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-anonymize-ua": "^2.4.6",
     "puppeteer-extra-plugin-click-and-wait": "^2.3.3",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "webdriverio": "^8.8.4"
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "repository": {
     "type": "git",
@@ -40,9 +37,5 @@
   "bugs": {
     "url": "https://github.com/fdciabdul/mutasi-scraper/issues"
   },
-  "homepage": "https://github.com/fdciabdul/mutasi-scraper#readme",
-  "devDependencies": {
-    "jest": "^28.1.2",
-    "jest-puppeteer": "6.1.0"
-  }
+  "homepage": "https://github.com/fdciabdul/mutasi-scraper#readme"
 }
