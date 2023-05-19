@@ -1,6 +1,6 @@
 // promisifying readline
 const readline = require('readline');
-const {ScrapBCA} = require("../lib/module.scraper.class.js");
+const {ScrapBCA} = require("../");
 const { promisify } = require('util');
 const rl = readline.createInterface({
   input: process.stdin,
