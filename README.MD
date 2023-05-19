@@ -5,7 +5,7 @@
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
-![Screenshot 2022-06-02 113138](https://github.com/fdciabdul/mutasi-scraper/assets/31664438/91e449fd-6200-41f2-b5c0-6c13a4531f02)
+![Screenshot 2022-06-02 113138](https://github.com/fdciabdul/mutasi-scraper/assets/31664438/2dca4544-f1b6-46fd-9daa-bd97114bf203)
 
 
 # Mutasi Scraper
