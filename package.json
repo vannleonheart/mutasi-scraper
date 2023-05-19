@@ -18,7 +18,7 @@
     "cheerio": "^1.0.0-rc.12",
     "date-format": "^4.0.10",
     "moment": "^2.29.4",
-    "puppeteer": "^19.8.2",
+    "puppeteer": "^20.0.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-anonymize-ua": "^2.4.6",
