@@ -65,8 +65,15 @@ const scraper = new ScrapBCA(user, pass, {
     '--disable-web-security',
     '--disable-site-isolation-trials',
   ],
-  executablePath: 'google-chrome',
+ // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
 });
+  const tglawal = "1 "; // tanggal 1
+  const blnawal = "4"; // bulan 4
+  const tglakhir = "30"; //ke tanggal 30
+  const blnakhir = "4 "; // bulan 4
+
+  var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
+  console.log(result);
 ```
 
 ### BRI (error)
