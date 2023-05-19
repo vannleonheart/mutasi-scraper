@@ -56,42 +56,27 @@ const {ScrapBCA} = require('mutasi-scraper');
 const user = 'USER';
 const pass = 'PASS';
 
-const scraper = new ScrapBCA(user, pass);
-scraper.getSettlement("1", "3", "24", "3").then((page) => {
-    // tanggalawal,bulanawal,tanggalakhir,bulanakhir
-    console.log(page);
-  }).catch((e) => {
-    console.log(e);
-  });
+const scraper = new ScrapBCA(user, pass, {
+  headless: false, // true if needed
+  args: [
+    '--log-level=3', 
+    '--no-default-browser-check',
+    '--disable-infobars',
+    '--disable-web-security',
+    '--disable-site-isolation-trials',
+  ],
+  executablePath: 'google-chrome',
+});
 ```
 
 ### BRI (error)
 
-```javascript
-
-const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
-(async () => {
-    var result = await scraper.getBRI("norek");
-    console.log(result);
-})();
-```
 
 ### MANDIRI (error)
 
-untuk mandiri karna web ibank biasanya mati , kalian bisa pakai yang ini 
-
-https://github.com/fdciabdul/MIB-Mutasi-Scraper
 
 ### DANAMON (error)
 
-```javascript
-
-const scraper = new ScraperBank("user", "pass"); // username dan password akun ibanking
-(async () => {
-    var result = await scraper.getDanamon();
-    console.log(result);
-})();
-```
 
 ### NOTE 
 
