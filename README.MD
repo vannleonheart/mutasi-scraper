@@ -46,8 +46,15 @@ disini [Index File](https://github.com/fdciabdul/mutasi-scraper/blob/main/index.
 ```bash
 npm run example
 ```
+## List 
+| Bank Name | Status |
+| --- | --- | 
+|BCA| ✅|
+|Mandiri|❌|
+|BRI|❌|
+|BNI|❌|
 
-### BCA (working)
+## BCA
 
 ```javascript
 
@@ -76,34 +83,21 @@ const scraper = new ScrapBCA(user, pass, {
   console.log(result);
 ```
 
-### BRI (error)
-
-
-### MANDIRI (error)
-
-
-### DANAMON (error)
 
 
 ### NOTE 
 
 guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
 
-### CONFIGURATION
-
-```javascript
-
-const scraper = new ScraperBank("user", "pass" , {
-    headless : false , // set false jika ingin memunculkan browser
-```
 
 # License
 
 [GPL-3.0 license](https://github.com/fdciabdul/mutasi-scraper/blob/main/LICENSE)
 
 # Code By
-[Abdul Muttaqin](mailto:abdulmuttaqin456@gmail.com)
-
+ Abdul Muttaqin
 # CP 
+cp@imtaqin.id
 
-abdulmuttaqin456@gmail.com
+
+
