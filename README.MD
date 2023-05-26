@@ -11,8 +11,8 @@ NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
 # Mutasi Scraper
 
-         Silahkan memberikan Start (⭐) pada repo ini jika anda menyukai ini 
-                   atau beri dukungan untuk project ini [enter link description here](#dukungan)
+  Silahkan memberikan Start (⭐) pada repo ini jika anda menyukai ini 
+ atau beri dukungan untuk project ini [dukungan](#dukungan)
 
 Library untuk membantu anda mendapatkan informasi mutasi dari iBanking anda 
 banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedalam kebutuhan yang ada , semisal auto accept payment , auto transfer , auto cek , dsb
