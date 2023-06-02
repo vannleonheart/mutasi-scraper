@@ -59,7 +59,10 @@ npm run example
 |Mandiri|❌|
 |BRI|❌|
 
+ <details>
 
+  <summary> Example</summary>
+  
 ## BCA
 
 ```javascript
@@ -88,6 +91,47 @@ const scraper = new ScrapBCA(user, pass, {
   var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
   console.log(result);
 ```
+## BNI
+
+```javascript
+
+const {ScrapBCA} = require('mutasi-scraper');
+
+const user = 'USER';
+const pass = 'PASS';
+
+const scraper = new ScrapBCA(user, pass, {
+  headless: false, // true if needed
+  args: [
+    '--log-level=3', 
+    '--no-default-browser-check',
+    '--disable-infobars',
+    '--disable-web-security',
+    '--disable-site-isolation-trials',
+  ],
+ // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
+});
+  const tglawal = "1 "; // tanggal 1
+  const blnawal = "4"; // bulan 4
+  const tglakhir = "30"; //ke tanggal 30
+  const blnakhir = "4 "; // bulan 4
+
+  var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
+  console.log(result);
+```
+
+ </details>
+
+### Dukungan 
+
+Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk mengerjakan project ini , jadi support dari temen temen semua sangat saya butuhkan disini 
+Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
+
+Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
+
+### NOTE 
+
+guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
 
 ### Dukungan 
 
