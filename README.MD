@@ -62,7 +62,7 @@ npm run example
  <details>
 
   <summary> Example</summary>
-  
+
 ## BCA
 
 ```javascript
@@ -95,7 +95,7 @@ const scraper = new ScrapBCA(user, pass, {
 
 ```javascript
 
-const {ScrapBCA} = require('mutasi-scraper');
+const {ScrapBBNI} = require('mutasi-scraper');
 
 const user = 'USER';
 const pass = 'PASS';
@@ -111,12 +111,8 @@ const scraper = new ScrapBCA(user, pass, {
   ],
  // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
 });
-  const tglawal = "1 "; // tanggal 1
-  const blnawal = "4"; // bulan 4
-  const tglakhir = "30"; //ke tanggal 30
-  const blnakhir = "4 "; // bulan 4
 
-  var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
+  var result = await scraper.getSettlement();
   console.log(result);
 ```
 
