@@ -54,9 +54,11 @@ npm run example
 | Bank Name | Status |
 | --- | --- | 
 |BCA| ✅|
+|BNI|Soon|
+|Gojek|Soon|
 |Mandiri|❌|
 |BRI|❌|
-|BNI|Soon|
+
 
 ## BCA
 
