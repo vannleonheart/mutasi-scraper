@@ -118,12 +118,6 @@ const scraper = new ScrapBCA(user, pass, {
 
  </details>
 
-### Dukungan 
-
-Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk mengerjakan project ini , jadi support dari temen temen semua sangat saya butuhkan disini 
-Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
-
-Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
 
 ### NOTE 
 
