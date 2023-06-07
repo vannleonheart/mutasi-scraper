@@ -56,7 +56,7 @@ npm run example
 |BCA| ✅|
 |BNI|✅|
 |Gojek|Soon|
-|Mandiri|❌|
+|Mandiri Cash Management|❌|
 |BRI|❌|
 
  <details>
