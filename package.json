@@ -1,6 +1,6 @@
 {
   "name": "mutasi-scraper",
-  "version": "2.2.16",
+  "version": "2.2.15",
   "main": "index.js",
   "directories": {
     "example": "examples",
@@ -18,11 +18,13 @@
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
     "date-format": "^4.0.10",
+    "karma-chrome-launcher": "^3.2.0",
     "moment": "^2.29.4",
-    "puppeteer": "^20.5.0",
+    "puppeteer": "^20.8.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "simple-socks": "^3.1.0"
   },
   "repository": {
     "type": "git",
