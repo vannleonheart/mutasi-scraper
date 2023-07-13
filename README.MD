@@ -88,7 +88,7 @@ const scraper = new ScrapBCA(user, pass, {
   const tglakhir = "30"; //ke tanggal 30
   const blnakhir = "4 "; // bulan 4
 
-  var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
+  var result = await scraper.getStatement(tglawal, blnawal, tglakhir, blnakhir);
   console.log(result);
 ```
 ## BNI
@@ -112,7 +112,7 @@ const scraper = new ScrapBCA(user, pass, {
  // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
 });
 
-  var result = await scraper.getSettlement();
+  var result = await scraper.getStatement();
   console.log(result);
 ```
 
