@@ -6,7 +6,12 @@
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
-![Screenshot 2022-06-02 113138](https://github.com/fdciabdul/mutasi-scraper/assets/31664438/2dca4544-f1b6-46fd-9daa-bd97114bf203)
+![Screenshot 2022-06-02 113138](https://telegra.ph/file/d50b351fbe0d12b4fac14.png)
+
+ <center>MUTASIKU - All in One Statement management for indonesian bank 
+ 
+ <img src="https://telegra.ph/file/bd9bf50619134e27b163e.png" width="190"></img>
+ </center>
 
 
 # Mutasi Scraper
