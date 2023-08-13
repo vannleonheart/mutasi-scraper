@@ -25,7 +25,7 @@ const questionAsync = promisify(rl.question).bind(rl);
     headless : false
   });
 
-  var result = await scraper.getSettlement(tglawal, blnawal, tglakhir, blnakhir);
+  const result = await scraper.getStatement(tglawal,blnawal,tglakhir,blnakhir);
   console.log(result);
 
   // close readline interface
