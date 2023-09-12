@@ -59,9 +59,9 @@ npm run example
 |Mandiri Cash Management|❌|
 |BRI|❌|
 
- <details>
 
-  <summary> Example</summary>
+
+# Example
 
 ## BCA
 
@@ -116,7 +116,7 @@ const scraper = new ScrapBCA(user, pass, {
   console.log(result);
 ```
 
- </details>
+
 
 
 ### NOTE 
@@ -142,7 +142,7 @@ guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika k
 # Code By
  Abdul Muttaqin
 # CP 
-cp@imtaqin.id
+taqin2731@gmail.com
 
 
 
