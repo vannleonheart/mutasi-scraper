@@ -55,9 +55,8 @@ npm run example
 | --- | --- | 
 |BCA| ✅|
 |BNI|✅|
-|Gojek|Soon|
-|Mandiri Cash Management|❌|
-|BRI|❌|
+|Mandiri Cash Management|✅|
+|BRI|✅|
 
 
 
@@ -117,8 +116,6 @@ const scraper = new ScrapBCA(user, pass, {
 ```
 
 
-
-
 ### NOTE 
 
 guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
@@ -134,6 +131,18 @@ Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
 
 guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
 
+## BRI
+
+```javascript
+
+const ScrapBRI = require("./lib/bank/BRI.js");
+
+(async () => {
+    const bca = new ScrapBRI("corpID", "userID","password","nomor rekening","wit.ai apikey");
+    const result = await bca.getStatement();
+    console.log(result);
+})();
+```
 
 # License
 
