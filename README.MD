@@ -93,12 +93,9 @@ const scraper = new ScrapBCA(user, pass, {
 ## BNI
 
 ```javascript
-
 const {ScrapBBNI} = require('mutasi-scraper');
-
 const user = 'USER';
 const pass = 'PASS';
-
 const scraper = new ScrapBCA(user, pass, {
   headless: false, // true if needed
   args: [
@@ -115,22 +112,6 @@ const scraper = new ScrapBCA(user, pass, {
   console.log(result);
 ```
 
-
-### NOTE 
-
-guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
-
-### Dukungan 
-
-Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk mengerjakan project ini , jadi support dari temen temen semua sangat saya butuhkan disini 
-Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
-
-Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
-
-### NOTE 
-
-guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
-
 ## BRI
 
 ```javascript
@@ -143,6 +124,20 @@ const ScrapBRI = require("./lib/bank/BRI.js");
     console.log(result);
 })();
 ```
+
+### NOTE 
+
+guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
+
+### Dukungan 
+
+Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk mengerjakan project ini , jadi support dari temen temen semua sangat saya butuhkan disini 
+Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
+
+Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
+
+
+
 
 # License
 
