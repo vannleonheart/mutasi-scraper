@@ -90,6 +90,7 @@ const scraper = new ScrapBCA(user, pass, {
   var result = await scraper.getStatement(tglawal, blnawal, tglakhir, blnakhir);
   console.log(result);
 ```
+
 ## BNI
 
 ```javascript
@@ -124,6 +125,19 @@ const ScrapBRI = require("./lib/bank/BRI.js");
     console.log(result);
 })();
 ```
+## Mandiri Cash Management
+
+```javascript
+
+const ScrapBRI = require("./lib/bank/BRI.js");
+
+(async () => {
+    const mandiri = new ScrapMCM("corpID", "userID","password","nomor rekening");
+    const res = await mandiri.getStatement();
+    console.log(res)
+})();
+```
+
 
 ### NOTE 
 
@@ -135,6 +149,7 @@ Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk menge
 Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
 
 Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
+
 
 
 
