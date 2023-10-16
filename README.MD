@@ -56,8 +56,8 @@ npm run example
 |BCA| ✅|
 |BNI|✅|
 |Mandiri Cash Management|✅|
-|BRI|✅|
-
+|newBiz BRI|✅|
+| BNI Direct |✅|
 
 
 # Example
