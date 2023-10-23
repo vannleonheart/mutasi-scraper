@@ -145,10 +145,7 @@ guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika k
 
 ### Dukungan 
 
-Saya memakan banyak waktu dan membutuhkan effort yang lumayan banyak untuk mengerjakan project ini , jadi support dari temen temen semua sangat saya butuhkan disini 
-Kritik dan saran atau berupa dukungan material dari temen temen semua sangat saya hargai , terimakasih banyak
-
-Dukung saya disini : https://imtaqin.id/dukungan-dan-donasi/
+List Supporter
 
 
 
