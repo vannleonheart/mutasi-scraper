@@ -146,16 +146,9 @@ guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika k
 
 ## Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-### All Ssupporter 
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+### All Supporter 
 
 | Donor's Image                                      |Date       |
 |---------------------------------------------------|--------------|
