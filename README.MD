@@ -1,8 +1,9 @@
 
 
 # IBANKING
-[![NPM](https://nodei.co/npm/mutasi-scraper.png?compact=true)](https://npmjs.org/package/mutasi-scraper)
+[![NPM](https://nodei.co/npm/mutasi-scraper.png?compact=true)](https://npmjs.org/package/mutasi-scraper) 
 
+[![All Contributors](https://img.shields.io/github/all-contributors/fdciabdul/mutasi-scraper?color=ee8449&style=flat-square)](#contributors)
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
@@ -143,11 +144,22 @@ const ScrapBRI = require("./lib/bank/BRI.js");
 
 guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)
 
-### Dukungan 
+## Contributors
 
-List Supporter
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+### All Ssupporter 
+
+| Donor's Image                                      |Date       |
+|---------------------------------------------------|--------------|
+| ![Regerta](https://avatars.githubusercontent.com/u/19641375?s=96&v=4) | Regerta     | 
 
 
 
