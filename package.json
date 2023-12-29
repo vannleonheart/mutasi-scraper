@@ -1,6 +1,6 @@
 {
   "name": "mutasi-scraper",
-  "version": "2.2.24",
+  "version": "2.2.25",
   "main": "index.js",
   "directories": {
     "example": "examples",
