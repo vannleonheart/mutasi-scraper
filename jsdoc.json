@@ -1,0 +1,35 @@
+{
+    "opts": {
+        "template": "node_modules/docdash"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "docdash": {
+        "static": true,
+        "sort": true,
+        "search": true,
+        "collapse": true,
+        "typedefs": true,
+        "removeQuotes": "none",
+        "scripts": [],
+        "menu": {
+            "Github repo": {
+                "href": "https://github.com/fdciabdul/mutasi-scraper",
+                "target": "_blank",
+                "class": "menu-item",
+                "id": "repository"
+            }
+        }
+    },
+    "source": {
+        "include": ["."],
+        "exclude": ["node_modules"],
+        "includePattern": ".(jsx|js|ts|tsx)$"
+    },
+    "templates": {
+        "default": {
+            "useLongnameInNav": true
+        }
+    }
+}

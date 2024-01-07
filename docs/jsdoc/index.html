@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/fdciabdul/mutasi-scraper" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Bank.Kopra.html">Bank.Kopra</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Bank.Kopra.html#formatDate">formatDate</a></li><li data-type='method' style='display: none;'><a href="Bank.Kopra.html#formatTransactionData">formatTransactionData</a></li><li data-type='method' style='display: none;'><a href="Bank.Kopra.html#getStatement">getStatement</a></li></ul></li><li><a href="Bank.ScrapBCA.html">Bank.ScrapBCA</a></li><li><a href="Bank.ScrapBNI.html">Bank.ScrapBNI</a></li><li><a href="ScrapBCA.html">ScrapBCA</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ScrapBCA.html#checkIfReturnToLogin">checkIfReturnToLogin</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#createTargetPage">createTargetPage</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#getStatement">getStatement</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#handleDialogAndLogout">handleDialogAndLogout</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#loginToBCA">loginToBCA</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#logoutAndClose">logoutAndClose</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#processGetBalance">processGetBalance</a></li><li data-type='method' style='display: none;'><a href="ScrapBCA.html#selectAccountAndSetDates">selectAccountAndSetDates</a></li></ul></li><li><a href="ScrapBRI.html">ScrapBRI</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ScrapBRI.html#fetchAccountDetails">fetchAccountDetails</a></li><li data-type='method' style='display: none;'><a href="ScrapBRI.html#formatCurrentDate">formatCurrentDate</a></li><li data-type='method' style='display: none;'><a href="ScrapBRI.html#getStatement">getStatement</a></li><li data-type='method' style='display: none;'><a href="ScrapBRI.html#loginToBRI">loginToBRI</a></li><li data-type='method' style='display: none;'><a href="ScrapBRI.html#parseAccountData">parseAccountData</a></li></ul></li><li></li><li><a href="ScraperBank.ScraperBank.html">ScraperBank.ScraperBank</a></li><li><a href="Utils.BCAParser.html">Utils.BCAParser</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Utils.BCAParser.html#parse">parse</a></li></ul></li><li><a href="Utils.NameExtractor.html">Utils.NameExtractor</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>IBANKING</h1>
+<p><a href="https://npmjs.org/package/mutasi-scraper"><img src="https://nodei.co/npm/mutasi-scraper.png?compact=true" alt="NPM"></a></p>
+<p><a href="#contributors"><img src="https://img.shields.io/github/all-contributors/fdciabdul/mutasi-scraper?color=ee8449&amp;style=flat-square" alt="All Contributors"></a></p>
+<p>NodeJS Package for scraping settlement (mutasi) in iBank indonesia</p>
+<p><img src="https://github.com/fdciabdul/mutasi-scraper/assets/31664438/2dca4544-f1b6-46fd-9daa-bd97114bf203" alt="Screenshot 2022-06-02 113138"></p>
+<h1>Mutasi Scraper</h1>
+<p>Silahkan memberikan Star (⭐) pada repo ini jika anda menyukai ini
+atau beri dukungan untuk project ini <a href="#dukungan">dukungan</a></p>
+<p>Library untuk membantu anda mendapatkan informasi mutasi dari iBanking anda
+banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedalam kebutuhan yang ada , semisal auto accept payment , auto transfer , auto cek , dsb</p>
+<h1>Pre requirements</h1>
+<ul>
+<li>Windows / Linux</li>
+<li>Nodejs 16+</li>
+<li>Google chrome</li>
+</ul>
+<h2>Cara Install</h2>
+<pre class="prettyprint source lang-bash"><code>npm install --save mutasi-scraper
+</code></pre>
+<p>atau</p>
+<pre class="prettyprint source lang-bash"><code>npm install https://github.com/fdciabdul/mutasi-Scraper
+</code></pre>
+<h2>Penggunaan</h2>
+<pre class="prettyprint source lang-javascript"><code>const {ScrapBCA} = require('mutasi-scraper');
+</code></pre>
+<p>Fungsi untuk Scraping bank dipisah dari setiap bank , kalian bisa cek apa saja bank yang work untuk di scrap
+disini <a href="https://github.com/fdciabdul/mutasi-scraper/blob/main/index.js">Index File</a></p>
+<h2>Test</h2>
+<pre class="prettyprint source lang-bash"><code>npm run example
+</code></pre>
+<h2>List</h2>
+<table>
+<thead>
+<tr>
+<th>Bank Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BCA</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>BNI</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Mandiri Cash Management</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>newBiz BRI</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>BNI Direct</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h1>Example</h1>
+<h2>BCA</h2>
+<pre class="prettyprint source lang-javascript"><code>
+const {ScrapBCA} = require('mutasi-scraper');
+
+const user = 'USER';
+const pass = 'PASS';
+
+const scraper = new ScrapBCA(user, pass, {
+  headless: false, // true if needed
+  args: [
+    '--log-level=3', 
+    '--no-default-browser-check',
+    '--disable-infobars',
+    '--disable-web-security',
+    '--disable-site-isolation-trials',
+  ],
+ // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
+});
+  const tglawal = &quot;1 &quot;; // tanggal 1
+  const blnawal = &quot;4&quot;; // bulan 4
+  const tglakhir = &quot;30&quot;; //ke tanggal 30
+  const blnakhir = &quot;4 &quot;; // bulan 4
+
+  var result = await scraper.getStatement(tglawal, blnawal, tglakhir, blnakhir);
+  console.log(result);
+</code></pre>
+<h2>BNI</h2>
+<pre class="prettyprint source lang-javascript"><code>const {ScrapBBNI} = require('mutasi-scraper');
+const user = 'USER';
+const pass = 'PASS';
+const scraper = new ScrapBCA(user, pass, {
+  headless: false, // true if needed
+  args: [
+    '--log-level=3', 
+    '--no-default-browser-check',
+    '--disable-infobars',
+    '--disable-web-security',
+    '--disable-site-isolation-trials',
+  ],
+ // executablePath: 'google-chrome', path google chrome  (uncomment line ini jika tidak diperlukan)  tapi direkomendasikan menggunakan google chrome 
+});
+
+  var result = await scraper.getStatement();
+  console.log(result);
+</code></pre>
+<h2>BRI</h2>
+<pre class="prettyprint source lang-javascript"><code>
+const ScrapBRI = require(&quot;./lib/bank/BRI.js&quot;);
+
+(async () => {
+    const bca = new ScrapBRI(&quot;corpID&quot;, &quot;userID&quot;,&quot;password&quot;,&quot;nomor rekening&quot;,&quot;wit.ai apikey&quot;);
+    const result = await bca.getStatement();
+    console.log(result);
+})();
+</code></pre>
+<h2>Mandiri Cash Management</h2>
+<pre class="prettyprint source lang-javascript"><code>
+const ScrapBRI = require(&quot;./lib/bank/BRI.js&quot;);
+
+(async () => {
+    const mandiri = new ScrapMCM(&quot;corpID&quot;, &quot;userID&quot;,&quot;password&quot;,&quot;nomor rekening&quot;);
+    const res = await mandiri.getStatement();
+    console.log(res)
+})();
+</code></pre>
+<h3>NOTE</h3>
+<p>guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika kalian ingin bank lain ditambahkan atau di fix silahkan email saya :)</p>
+<h2>Contributors</h2>
+<!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/fdciabdul">
+            <img src="https://avatars.githubusercontent.com/u/31664438?v=4" width="100;" alt="fdciabdul"/>
+            <br />
+            <sub><b>Taqin</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/renovate-bot">
+            <img src="https://avatars.githubusercontent.com/u/25180681?v=4" width="100;" alt="renovate-bot"/>
+            <br />
+            <sub><b>Mend Renovate</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/mattimmanuel01">
+            <img src="https://avatars.githubusercontent.com/u/41610158?v=4" width="100;" alt="mattimmanuel01"/>
+            <br />
+            <sub><b>Matthew Immanuel</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/nusendra">
+            <img src="https://avatars.githubusercontent.com/u/8466308?v=4" width="100;" alt="nusendra"/>
+            <br />
+            <sub><b>Nusendra Hanggarawan</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: contributors -end -->
+<h3>All Supporter</h3>
+<table>
+<thead>
+<tr>
+<th>Donor's Image</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://avatars.githubusercontent.com/u/19641375?s=96&amp;v=4" alt="Regerta"></td>
+<td>Regerta</td>
+</tr>
+</tbody>
+</table>
+<h1>License</h1>
+<p><a href="https://github.com/fdciabdul/mutasi-scraper/blob/main/LICENSE">GPL-3.0 license</a></p>
+<h1>Code By</h1>
+<p>Abdul Muttaqin</p>
+<h1>CP</h1>
+<p>taqin2731@gmail.com</p></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Mon Jan 08 2024 01:33:51 GMT+0700 (Indochina Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

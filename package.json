@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "example": "node ./examples/example"
+    "example": "node ./examples/example",
+    "jsdoc": "jsdoc -c jsdoc.json -r -R README.md src -d docs/jsdoc"
   },
   "author": "Abdul Muttaqin",
   "license": "MIT",
@@ -39,5 +40,10 @@
   "bugs": {
     "url": "https://github.com/fdciabdul/mutasi-scraper/issues"
   },
-  "homepage": "https://github.com/fdciabdul/mutasi-scraper#readme"
+  "homepage": "https://github.com/fdciabdul/mutasi-scraper#readme",
+  "devDependencies": {
+    "docdash": "^2.0.2",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  }
 }
