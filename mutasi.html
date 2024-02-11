@@ -1,0 +1,802 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-889-1">
+    <meta http-equiv="Refresh" content="600; URL=https://bsinet.bankbsi.co.id/cms/index.php?cmd=CMD_LOGOUT">
+    <title>BSINet - Bank Syariah Indonesia  | V8 </title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-337.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.css">
+    <link rel="StyleSheet" href="jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-337.js"></script> -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header-1">
+        <div class="header-title">
+            <!-- <div class="title">
+                <h3 class="slogan">Terdepan, Modern, Menentramkan</h3>
+            </div> -->
+            <div class="logo">
+                <img src="assets/img/nlogo-unfx-drk.png" class="logo-mandiri">
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="kalender">
+            <i class="las la-calendar"></i>
+            <p class="date">14-01-2024</p>
+            <a href="#" class="nav-trigger"><span><img src="assets/img/jam_menu.png" class="menu"></span></a>
+        </div>
+        <div class="user">
+             <p>PT ZONA KARYA MENDUNIA | 88376517 | V8</p>
+            <a href="#" class="user-trigger"><span class="las la-user"></span></a>
+            <i class="las la-angle-down drp-user"></i>
+        </div>
+    </div>
+    <div class="user-nav">
+        <nav>
+            <div class="user-kalender">
+
+                <p class="user-date"><i class="las la-calendar"></i>14-01-2024</p>
+            </div>
+            <div class="user-name">
+                 <p>PT ZONA KARYA MENDUNIA | 88376517 | V8</p>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="side-nav">
+        <div class="logo-side">
+            <div class="lingkar-nav kiri">
+                <a href="#" onclick="history.go(-1)"><i class="las la-arrow-left"></i></a>
+            </div>
+            <div class="lingkar-nav">
+                <a href="#" onclick="history.go(+1)"><i class="las la-arrow-right"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <hr class="grs-sidebar"><li><p class="group-sidebar">Menu Utama</p></li><li><a href="?title=Halaman Depan&amp;cmd=CMD_HOME"><span>Halaman Depan</span></a></li><li><a href="?title=Informasi&amp;cmd=CMD_INFO"><span>Informasi</span></a></li><li><a href="?title=Informasi Kurs&amp;cmd=CMD_KURS"><span>Informasi Kurs</span></a></li><li><a href="?title=Notifikasi&amp;cmd=CMD_NOTIF"><span>Notifikasi</span><span class="badge badge-danger-ml notif" id="badge-qris">0</span></a></li><li><a href="?title=<b>Logout</b>&amp;cmd=CMD_LOGOUT"><span><b>Logout</b></span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Rekening</p></li><li><a href="?title=Tabungan dan Giro&amp;cmd=CMD_REK_TAB"><span>Tabungan dan Giro</span></a></li><li><a href="?title=Mutasi Rekening&amp;cmd=CMD_REK_TAB_TRN"><span>Mutasi Rekening</span></a></li><li><a href="?title=Deposito&amp;cmd=CMD_REK_DEP"><span>Deposito</span></a></li><li><a href="?title=Pembiayaan&amp;cmd=CMD_REK_BIA"><span>Pembiayaan</span></a></li><li><a href="?title=Favorit&amp;cmd=CMD_FAV_VIEW"><span>Favorit</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Transfer</p></li><li><a href="?title=B S I&amp;cmd=CMD_TRN_TRANS"><span>B S I</span></a></li><li><a href="?title=Online Antar Bank&amp;cmd=CMD_TRN_REAL"><span>Online Antar Bank</span></a></li><li><a href="?title=Kliring atau SKN&amp;cmd=CMD_TRN_SKN"><span>Kliring atau SKN</span></a></li><li><a href="?title=R T G S&amp;cmd=CMD_TRN_RTGS"><span>R T G S</span></a></li><li><a href="?title=BIFAST&amp;cmd=CMD_TRN_BI_FAST"><span>BIFAST</span></a></li><li><a href="?title=Transaksi Terjadwal&amp;cmd=CMD_TERJADWAL"><span>Transaksi Terjadwal</span></a></li><li><a href="?title=Spesial&amp;cmd=CMD_TRN_SPC"><span>Spesial</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Payment</p></li><li><a href="?title=Pembayaran&amp;cmd=CMD_PAY_POST"><span>Pembayaran</span></a></li><li><a href="?title=Pembelian&amp;cmd=CMD_PAY_PRE"><span>Pembelian</span></a></li><li><a href="?title=Zakat/Infaq&amp;cmd=CMD_ZIS"><span>Zakat/Infaq</span></a></li><li><a href="?title=Kalkulator Zakat&amp;cmd=CMD_ZAKAT"><span>Kalkulator Zakat</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Inquiry</p></li><li><a href="?title=Transfer Uang Tunai&amp;cmd=CMD_TRN_CASH_INQ"><span>Transfer Uang Tunai</span></a></li><li><a href="?title=Token Listrik Prabayar&amp;cmd=CMD_PAY_TOKEN_CHECK"><span>Token Listrik Prabayar</span></a></li><li><a href="?title=Form Reinquiry MPN&amp;cmd=CMD_STATE_REVENUE_REINQURY"><span>Form Reinquiry MPN</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Admin</p></li><li><a href="?title=Ganti Password&amp;cmd=CMD_ADMCMS_PIN"><span>Ganti Password</span></a></li><li><a href="?title=Ganti PIN Otorisasi&amp;cmd=CMD_ADMCMS_OTO"><span>Ganti PIN Otorisasi</span></a></li><li><a href="?title=Ganti User ID&amp;cmd=CMD_ADMCMS_UID"><span>Ganti User ID</span></a></li><li><a href="?title=Proxy List&amp;cmd=CMD_PROXY_LIST"><span>Proxy List</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Token SMS</p></li><li><a href="javascript:openwindow(&quot;?mode=2&amp;title=Request Token&amp;cmd=CMD_ADMCMS_REQ_TOKEN&quot;)"><span>Request Token</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">SBN Online</p></li><li><a href="?title=Registrasi&amp;cmd=CMD_SEC_REG"><span>Registrasi</span></a></li><li><a href="?title=Pemesanan&amp;cmd=CMD_SEC_ORDER"><span>Pemesanan</span></a></li><li><a href="?title=Early Redemption&amp;cmd=CMD_SEC_REDEMPTION"><span>Early Redemption</span></a></li><li><a href="?title=History Transaksi&amp;cmd=CMD_SEC_HIST"><span>History Transaksi</span></a></li><li><a href="?title=Portfolio&amp;cmd=CMS_SEC_PORTFOLIO"><span>Portfolio</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">MSPP</p></li><li><a href="?title=Curah &amp; Kemasan&amp;cmd=CMD_PERTAMINA_CURAH"><span>Curah &amp; Kemasan</span></a></li><li><a href="?title=Quotation&amp;cmd=CMD_PERTAMINA_QUOTATION"><span>Quotation</span></a></li><li><a href="?title=Produk Alokasi&amp;cmd=CMD_PERTAMINA_ALLOCATION"><span>Produk Alokasi</span></a></li><hr class="grs-sidebar"><li><p class="group-sidebar">Payroll</p></li><li><a href="?title=Create Payroll&amp;cmd=CMD_PAYROLL"><span>Create Payroll</span></a></li><li><a href="?title=Monitoring Payroll&amp;cmd=CMD_PAYROLL_MONITOR"><span>Monitoring Payroll</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="main">
+            <div class="widget">
+                <form enctype="multipart/form-data" method="post" action="index.php" name="myform_main" id="form" onsubmit="return whenSubmit()">
+                    <font face="arial" size="2pt"><h2>Mutasi Rekening</h2></font><div class="detail-mutasi">
+	<div class="col-md-6 mutasi">
+		<div class="mutasi-rekening">
+			<i class="lab la-cc-mastercard"></i>
+			<div class="mutasi-rek">
+				<p class="judul">Rekening</p>
+				<p class="isi">IDR 7202439718 - PT ZONA KARYA MENDUNIA (6020)</p>
+			</div>
+		</div>
+		<hr class="hr-mutasi">
+		<div class="mutasi-rekening">
+			<i class="las la-building"></i>
+			<div class="mutasi-rek">
+				<p class="judul">Cabang</p>
+				<p class="isi">ID0018021</p>
+			</div>
+		</div>
+	</div>
+	<hr class="hr-button">
+	<div class="col-md-6 mutasi">
+		<table class="result-info table table-borderless">
+			<tbody><tr>
+				<td class="judul-right">Periode</td>
+				<td class="isi-right">:  01-01-2024 s/d  12-01-2024</td>
+			</tr>
+			<tr>
+				<td class="judul-right">Total Debet (Dalam Periode)</td>
+				<td class="isi-right">:  3,804,896.00-</td>
+			</tr>
+			<tr>
+				<td class="judul-right">Total Kredit (Dalam Periode)</td>
+				<td class="isi-right">:  20,586,000.00</td>
+			</tr>
+			<tr>
+				<td class="judul-right">Saldo riil awal per 01-01-2024</td>
+				<td class="isi-right">:  120,973,988.33</td>
+			</tr>
+			<tr>
+				<td class="judul-right">Saldo riil awal per 12-01-2024</td>
+				<td class="isi-right">:  137,755,092.33</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div><p><script src="jquery1.min.js"></script></p><div class="table table-show table-0">
+<div class="table-responsive tabel-mutasi"><table bgcolor="" cellpadding="6" cellspacing="1" border="0" class="table table-borderless"><tbody><tr class="table-title-giro"><th class="text-center" bgcolor="">No</th><th class="text-center" bgcolor="">Waktu Transaksi</th><th class="text-center" bgcolor="">No. Referensi</th><th class="text-center" bgcolor="">	Nama Pengirim</th><th class="text-center" bgcolor="">Bank Pengirim</th><th class="text-center" bgcolor="">Nama Penerima</th><th class="text-center" bgcolor="">Bank Penerima</th><th class="text-center" bgcolor="">Deskripsi</th><th class="text-center" bgcolor="">Debet</th><th class="text-center" bgcolor="">Kredit</th><th class="text-center" bgcolor="">Saldo Riil</th><th class="text-center" bgcolor="">Kode</th></tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">1</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">02-01-2024 04:44</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">7202439718.FEE012024</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">By. Adm. BSI Net DEC 23 </font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">10,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">120,963,988.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">968</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">2</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">03-01-2024 09:25</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24003HKJC2</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">DIMAS DIAR AIDI SMT Gaji Desember 23 </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">BIFAST</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">1,800,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">119,163,988.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">3</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">03-01-2024 09:25</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24003HKJC2</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Biaya Pemindahbukuan e-Banking </font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">2,500.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">119,161,488.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">234</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">4</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">03-01-2024 09:27</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24003WMWFB</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PIONA CHESSONIA MASYER SMT Gaji Desember 23 </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">BIFAST</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">1,500,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,661,488.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">5</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">03-01-2024 09:27</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24003WMWFB</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Biaya Pemindahbukuan e-Banking </font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">2,500.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,658,988.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">234</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">6</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 03:55</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">7202439718.11.202401</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Biaya Administrasi </font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">10,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,648,988.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">961</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">7</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 10:53</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004Z1D20</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">DWI SETYAWAN </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMTKurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">15,896.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,633,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">8</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 10:55</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004FGBJ3</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Danar Septiawan Purnama </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,588,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">9</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 10:57</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004QBDJF</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">YULI ARIDWAN </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,543,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">10</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:01</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004VQGHC</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">RADITYA RIZKI NUGROHO </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,498,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">11</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:02</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004W2GPT</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MUHAMMAD IQBAL FEBRI RAMADANI </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,453,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">12</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:04</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004BCJND</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MOHAMMAD ICHSAN BAGUS LAKSANA </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">90,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,363,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">13</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:06</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24004L1S0S</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MUHAMMAD ARIFIN </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,318,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">14</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:08</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT2400435RSL</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MOH FUAD SHOFI </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">104,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,214,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">15</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">04-01-2024 11:09</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT2400413HL6</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">LARAS KINANTI </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">SMT kurang TF Gaji Desember 23</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">45,000.00-</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">117,169,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+</tbody></table></div></div><div class="table table-show table-1">
+<div class="table-responsive tabel-mutasi"><table bgcolor="" cellpadding="6" cellspacing="1" border="0" class="table table-borderless"><tbody><tr class="table-title-giro"><th class="text-center" bgcolor="">No</th><th class="text-center" bgcolor="">Waktu Transaksi</th><th class="text-center" bgcolor="">No. Referensi</th><th class="text-center" bgcolor="">	Nama Pengirim</th><th class="text-center" bgcolor="">Bank Pengirim</th><th class="text-center" bgcolor="">Nama Penerima</th><th class="text-center" bgcolor="">Bank Penerima</th><th class="text-center" bgcolor="">Deskripsi</th><th class="text-center" bgcolor="">Debet</th><th class="text-center" bgcolor="">Kredit</th><th class="text-center" bgcolor="">Saldo Riil</th><th class="text-center" bgcolor="">Kode</th></tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">16</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">09-01-2024 14:17</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT24009QJ05J</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MUCHAMAD DACHLAN ZA IM SMT Saving ZISWAF okt </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">BIFAST</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">15,000,000.00</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">132,169,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+<tr class="table-isi-giro">
+<td bgcolor="" align="center" valign="top"><font face="arial" size="2pt">17</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">09-01-2024 14:24</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">FT240093TZNG</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">MUCHAMAD DACHLAN ZAIM SMT Saving sewa des </font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">PT ZONA KARYA MENDUNIA</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">Bank Syariah Indonesia</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">BIFAST</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt"></font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">5,586,000.00</font></td>
+<td bgcolor="" align="right" valign="top"><font face="arial" size="2pt">137,755,092.33</font></td>
+<td bgcolor="" align="" valign="top"><font face="arial" size="2pt">213</font></td>
+</tr>
+</tbody></table></div></div><style> .table-1,  .table-2 {display:none}</style><center>| <span class="page page-0 active">1</span> | <span class="page page-1 ">2</span> | </center><script>$(".page").on("click", function(e) {
+ 			var elems = document.getElementsByClassName("table-show");
+			  for (i = 0; i < elems.length; i++) {
+			    elems[i].style.display = "none";
+			  }
+ 		  })
+ 		   $(".page-0").on("click", function(e) {
+					 e.preventDefault();
+
+					 $(this).addClass("active").siblings("span").removeClass("active");
+					 $(".table-0").addClass("activetable").siblings("div").removeClass("activetable");
+					 $(".table-0").show();
+				   })
+				    $(".page-1").on("click", function(e) {
+					 e.preventDefault();
+
+					 $(this).addClass("active").siblings("span").removeClass("active");
+					 $(".table-1").addClass("activetable").siblings("div").removeClass("activetable");
+					 $(".table-1").show();
+				   })
+				   </script><style>
+ 			.active{
+ 				color:red;
+ 			}
+ 			table {
+			    border-collapse: separate;
+			} 	
+ 		  </style> <p></p>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="cetak-ver"> 
+		  <a href="javascript:openwindow('?cmd=CMD_REK_PRINT&amp;MY_ACC_ENC=eyJjaXBoZXJ0ZXh0IjoiTVQrV29aM0pQcTJhdzNSckFiUDZadz09IiwiaXYiOiJiYTRmMWYzMWRmMmQ0NmQ1MDdkMjhlNjVmNTA1ZDBiZSIsInNhbHQiOiIxMGRhZWI3NTQ3NTZiOWNmODNjNDU2MDFmMTNhNGY2NjU2MWZkZjI2ZTk0NGNjZDY1NTJlNGQxMDY2YmRhM2Y4ZjYzYmQyZjNjNDlmODBjYzE3YjAyOTg5ODAxN2JkYmJjMDg0ZDQyOWU1MTdhNTQ5M2ViMDcyMWRiOGU4NDkzNTZjZjUwOTFkMmIzNjJhMWM1ZjJmNmNlY2M5MWU0ZmYwY2VkZGNmOGNlMDQ2MTc0OTYyYjA1YTBjY2ExZjBlMGIwYjg2ZmI0YjQ4MjczM2JjNDZjOTc2NDU3Mzk3Yjk5ZjJmN2FiMjViZGNkZTFlZTMyODM5MmQ1MDg2MGI0YjM2Mzg5YWZmYjNjNGZkN2VkY2ZkZWVhMDc2MmVjYzgyNzIzZDE1YmFhNjM5MGFhODhlODc4NjAxMzVmNjFkNjg2MDE2NjZhOTk1MDAzMmE5ZTVhY2UyOGZmMDM5NDYzMjlkNWNjZjRiZWIzM2VkOTc4NjdlNTQ5NTM5NDQ2ZDExMTFlZjVlOGZjMWVjMDEwZjVhNTFlYjE2NzRjM2RjOGViYWRlMjU3ODQyNDFkMTA2MGE1M2I1YjQ5NWJiZDYxY2FkMjZmODU3NGM2MDhjYTA5YTFmZmI0MjM3OTVmNTk3NjczYjRlMzJhODVjMWUxMTA5MWYwNmNiOGY1NmMwYjJmMiIsIml0ZXJhdGlvbnMiOjk5OX0=&amp;BAL=137,755,092.33&amp;CUR=&amp;DATE_FROM=01-01-2024&amp;DATE_UNTIL=12-01-2024&amp;DATE_FROM_DD=01&amp;DATE_FROM_MM=01&amp;DATE_FROM_YY=2024&amp;DATE_UNTIL_DD=12&amp;DATE_UNTIL_MM=01&amp;DATE_UNTIL_YY=2024&amp;mode=2','trnprint_')"><i class="las la-file-alt"></i>Versi Cetak</a>
+	  </div>
+		</div>
+		<div class="col-md-3">
+		<label for="">Pilih Format File : &nbsp;&nbsp;&nbsp;</label>
+			<select name="Format File" size="" onchange="return hideShowDownload(this.value);" id="Format File" class="form-control form-control-sm"><option value="">*** Select ***</option>
+<option value="txt">TXT</option>
+<option value="pdf">PDF</option>
+<option value="xls">XLS</option>
+<option value="csv">CSV</option></select>
+		</div>
+		<div class="col-md-3">
+			<br>
+<button class="btn-submit " type="submit" value="" id="mysubmitLoop"><i class="las la-check-circle"></i> Download</button>
+<input type="hidden" name="cmd" value="CMD_REK_TAB_TRN_EXE_DL" id="cmd">
+		</div>
+	</div>
+	
+                </form>
+            </div>
+            <div class="mini-widget">
+                <p class="copyright1">PT Bank Syariah Indonesia adalah pelaku jasa keuangan terdaftar dan diawasi oleh
+                    Otoritas Jasa Keuangan</p>
+                <p class="copyright">2024 | <span style="color: #000000;">© PT Bank Syariah Indonesia</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.smartmenus.js"></script>
+    <script src="assets/js/jquery.smartmenus.bootstrap.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/bootstrap-337.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/crypto-js/crypto-js.js"></script>
+    <script src="assets/js/crypto-js/Encryption.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script type="text/javascript">
+        var myWindow;
+
+        function go(url) {
+            if (document.images) location.replace(url);
+            else location.href = url;
+        }
+
+        //Hatta - Hanya 1 PopUp 
+        function openwindow(pSite, pName, pWidth = 600, pHeight = 500) {
+            if (!myWindow || myWindow.closed) {
+                myWindow = window.open(pSite, pName,
+                    "toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no,width=" +
+                    pWidth + ",height=" + pHeight);
+            }
+        }
+        //Hatta End
+
+        function openwindowsmall(pSite, pName) {
+            window.open(pSite, pName,
+                "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=1,height=1"
+                )
+        }
+
+        function openCal(pSite, pName) {
+            window.open(pSite, pName,
+                "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=250,height=250"
+                )
+        }
+
+        function getDate(pDate) {
+            //winmain.document.myform_main.REC_TGL.value = pDate;
+            winmain.document.getElementById('ThisDate').value = pDate;
+        }
+
+        function writeDate(pField, pDate) {
+            //vField = pField + '_VAL';
+            //window.opener.document.myform_main.pField.value=pDate;
+            //window.opener.document.myform_main.vField.value=pDate;
+            window.close();
+        }
+
+        var oLastBtn = 0;
+        bIsMenu = false;
+        if (window.Event)
+            document.captureEvents(Event.MOUSEUP);
+
+        function nocontextmenu() {
+            event.cancelBubble = true
+            event.returnValue = false;
+            return false;
+        }
+
+        function norightclick(e) {
+            if (window.Event) {
+                if (e.which != 1) return false;
+            } else
+            if (event.button != 1) {
+                event.cancelBubble = true
+                event.returnValue = false;
+                return false;
+            }
+        }
+        document.oncontextmenu = nocontextmenu;
+        document.onmousedown = norightclick;
+
+        function onKeyDown() {
+            //alert (event.keyCode);
+            if ((event.altKey) || ((event.keyCode == 8) &&
+                    (event.srcElement.type != "text" &&
+                        event.srcElement.type != "textarea" && event.srcElement.type != "password")) ||
+                ((event.ctrlKey) && ((event.keyCode == 78) || (event.keyCode == 82))) ||
+                (event.keyCode == 115) || (event.keyCode == 116) || (event.keyCode == 117)) {
+                event.keyCode = 0;
+                event.returnValue = false;
+            }
+        }
+
+        document.onselectstart = function () {
+            return false
+        }
+
+        function whenSubmit() {
+            // document.getElementById("mysubmit").value = "Please wait . . . ";
+            document.getElementById("mysubmit").innerHTML = "Please wait . . . ";
+            document.getElementById("mysubmit").disabled = true;
+            document.getElementById("mysubmitLoop").disabled = false;
+        }
+
+        //ponco - open payment
+        function showOpenPayment() {
+            if ($('#OPAMOUNT').length > 0) {
+                document.getElementById("OPAMOUNT").style.display = 'none';
+                IDPayment = JSON.parse($("#combobox").attr("data-param"));
+                var val = $('#combobox').val();
+
+                for (i in IDPayment) {
+                    if (val == IDPayment[i]) {
+                        document.getElementById("OPAMOUNT").style.display = '';
+                        return true
+                    }
+                }
+            }
+        }
+
+        function refreshQRISNotif(){
+            $.ajax({
+                dataType: 'json',
+                url: 'ajaxResponse.php?cmd=CMD_UPD_BADGE_QRIS',
+                success: function (data) {
+                    $("#badge-qris").text(data);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            // $(document).on('change', '.custom-combobox-input', function () {
+            // showOpenPayment()
+            // });
+            //Favorite Univ Pay
+            showOpenPayment();
+            $(document).on('click', '.ui-menu-item', function () {
+                showOpenPayment();
+            });
+            $(document).on('blur', '.custom-combobox-input', function () {
+                showOpenPayment();
+            });
+            refreshQRISNotif();
+            // setInterval(refreshQRISNotif, 60 * 500);
+        });
+
+        $(document).ready(function () {
+            $(".toggle-title").click(function () {
+                $(".collapse").collapse('toggle');
+            });
+
+            // $("input").addClass("form-control form-control-sm");
+            $("select").addClass("form-control form-control-sm");
+            $(":text").addClass("form-control form-control-sm");
+            $(":password").addClass("form-control form-control-sm");
+            $(":radio").addClass("form-check-input");
+            // $(":checkbox").addClass("form-check-input");
+            // $(":submit").addClass("form-control form-control-sm");
+            $(":reset").addClass("form-control form-control-sm");
+            $(":file").addClass("form-control");
+            $("table").addClass("table table-borderless");
+
+            // $(":button").addClass("form-control form-control-sm");
+
+            //encryption js
+            let encryption = new Encryption();
+            const b = encryption.b();
+            $('#form').submit(function (e) {
+                // e.preventDefault();
+                var formData = $("#form").serializeArray();
+                $(formData).each(function (index, obj) {
+                    var prefix = obj.name.substr(obj.name.length - 3);
+                    if (prefix == 'ENC') {
+                        let encryptedVal = encryption.encode(obj.value, atob(b));
+                        $('input[name=' + obj.name + ']').val('');
+                        $('select[name=' + obj.name + ']').val('');
+                        $('<input>').attr({
+                            type: 'hidden',
+                            name: obj.name,
+                            value: encryptedVal
+                        }).appendTo('#form');
+                    }
+                });
+            });
+
+        });
+
+        //ponco - open payment
+
+        function hideShow(val) {
+            var ubp =
+                '[BPJS]~[40019]~[23000]~[810128]~[013001]~[013002]~[013007]~[010006]~[812277]~[10051]~[10052]~[89888]~[810133]~[60003]~[23222]~[23777]~[710011]~[71134]~[53020]~[200194]~[6045]~[012101]~[012103]~[016002]~[60008]~[60808]~[180919]~[090004]~[200194S]~[60010]~[061401]~[061701]~[88999]~[014001]~[015001]~[10002]~[88998]~[10005]~[SDPPI]';
+
+            var pay = document.getElementById("PAY_PAYMENT").value;
+
+            /*if(ubp.replace('['+val+']','AAAAA') == ubp){
+                alert(val);
+        
+                document.getElementById("PAY_NO").style.display = '';
+                document.getElementById("PAY_BPJS").style.display = 'none';
+                document.getElementById("univ").style.display = 'none';
+                document.getElementById("PAY_INSU").style.display = 'none';
+                if(val=="0254"){
+                  document.getElementById("univ").style.display = '';
+                }
+                else if(val=="INSR" || document.getElementById("PAY_PAYMENT").value == 'INSR'){
+        
+        
+        
+                    document.getElementById("PAY_INSU").style.display = '';
+                }
+            }
+            else {
+                document.getElementById("univ").style.display = 'none';
+                document.getElementById("PAY_NO").style.display = 'none';
+                if(val=="BPJS"){
+                    document.getElementById("PAY_BPJS").style.display = '';
+                    document.getElementById("PAY_INSU").style.display = 'none';
+                }
+                else if(val=="INSR" || document.getElementById("PAY_PAYMENT").value == 'INSR'){
+                    document.getElementById("PAY_INSU").style.display = '';
+                }
+                else{
+                    document.getElementById("PAY_BPJS").style.display = 'none';
+                }
+            }*/
+            document.getElementById("PAY_INSU").style.display = 'none';
+            document.getElementById("PAY_BPJS").style.display = 'none';
+            document.getElementById("PAY_SDPPI").style.display = 'none';
+            document.getElementById("univ").style.display = 'none';
+            document.getElementById("PAY_TICKETING").style.display = 'none';
+            document.getElementById("PAY_INETCABLE").style.display = 'none';
+            document.getElementById("PAY_DATA").style.display = 'none';
+            document.getElementById("PAY_TOPUP").style.display = 'none';
+            document.getElementById("PAY_VOUCHER").style.display = 'none';
+            document.getElementById("PAY_ECOMMERCE").style.display = 'none';
+            document.getElementById("PAY_TELPOSTPAID").style.display = 'none';
+            document.getElementById("PAY_PDAM").style.display = 'none';
+            document.getElementById("AMOUNTSEL").style.display = 'none';
+            document.getElementById("PAY_SISKOPATUH").style.display = 'none';
+            document.getElementById("PAY_STREAMING").style.display = 'none';
+            document.getElementById("PAY_BERBAGI").style.display = 'none';
+			document.getElementById("PAY_PENDHAJI").style.display = 'none';
+            document.getElementById("No_VA").style.display='none';
+			document.getElementById("No_Rek").style.display='none';
+
+            if (pay == "INSR") {
+                document.getElementById("PAY_INSU").style.display = '';
+            } else if (pay == "BPJS") {
+                document.getElementById("PAY_BPJS").style.display = '';
+            } else if (pay == "SDPPI") {
+                document.getElementById("PAY_SDPPI").style.display = '';
+            } else if (pay == "0254") {
+                document.getElementById("univ").style.display = '';
+            } else if (pay == "TICK") {
+                document.getElementById("PAY_TICKETING").style.display = '';
+            } else if (pay == "INET") {
+                document.getElementById("PAY_INETCABLE").style.display = '';
+            } else if (pay == "PKDT") {
+                document.getElementById("PAY_DATA").style.display = '';
+            } else if (pay == "TOPU") {
+                document.getElementById("PAY_TOPUP").style.display = '';
+            } else if (pay == "TPRE") {
+                document.getElementById("PAY_VOUCHER").style.display = '';
+            } else if (pay == "ECOM") {
+                document.getElementById("PAY_ECOMMERCE").style.display = '';
+            } else if (pay == "TPOS") {
+                document.getElementById("PAY_TELPOSTPAID").style.display = '';
+            } else if (pay == "PDAM") {
+                document.getElementById("PAY_PDAM").style.display = '';
+            } else if (pay == "TOPM") {
+                document.getElementById("AMOUNTSEL").style.display = '';
+            } else if (pay == "SKPT") {
+                document.getElementById("PAY_SISKOPATUH").style.display = '';
+            } else if (pay == "STMG") {
+                document.getElementById("PAY_STREAMING").style.display = '';
+            } else if (pay == "BRBG") {
+                document.getElementById("PAY_BERBAGI").style.display = '';
+            }
+            if (ubp.replace('[' + val + ']', 'AAAAA') != ubp) {
+                document.getElementById("PAY_NO").style.display = 'none';
+            } 
+			else if (pay == "PHO"){
+                document.getElementById("PAY_PENDHAJI").style.display = '';
+                document.getElementById("PAY_NO").style.display = 'none';
+                var idHaji = document.getElementById("PAY_PAYPENDHAJI").value;
+                if (idHaji=="501"){ 
+                    document.getElementById("PAY_NO").style.display = 'none';
+                }
+                else if (idHaji=="502"){
+                    document.getElementById("PAY_NO").style.display = 'none';
+                    document.getElementById("No_Rek").style.display='';
+                    document.getElementById("No_VA").style.display='';
+                }
+            }
+			else {
+                document.getElementById("PAY_NO").style.display = '';
+            }
+            return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function allowNumbersOnly(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+
+        function avoidSplChars(e) {  
+            var specialKeys = new Array();
+            var avoid = [33,35,36,37,38,42,64,94];
+            specialKeys.push(8);  /*Backspace*/
+            specialKeys.push(9);  /*Tab*/
+            specialKeys.push(46); /*Delete*/
+            specialKeys.push(36); /*Home*/
+            specialKeys.push(35); /*End*/
+            specialKeys.push(37); /*Left*/
+            specialKeys.push(39); /*Right*/
+            var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+            var ret = ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || keyCode == 32 || !(avoid.includes(keyCode))|| (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+            /*document.getElementById("error").style.display = ret ? "none" : "inline";*/
+            return ret; 
+        }
+
+        function IsAlphaNumeric(e) {
+            var specialKeys = new Array();
+            specialKeys.push(8); /*Backspace*/
+            specialKeys.push(9); /*Tab*/
+            specialKeys.push(46); /*Delete*/
+            specialKeys.push(36); /*Home*/
+            specialKeys.push(35); /*End*/
+            specialKeys.push(37); /*Left*/
+            specialKeys.push(39); /*Right*/
+            var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+            var ret = ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 &&
+                keyCode <= 122) || keyCode == 32 || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e
+                .keyCode));
+            /*document.getElementById("error").style.display = ret ? "none" : "inline";*/
+            return ret;
+        }
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                } else if (e) {
+                    var charCode = e.which;
+                } else {
+                    return true;
+                }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 32)
+                    return true;
+                else
+                    return false;
+            } catch (err) {
+                alert(err.Description);
+            }
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'OHBDCOLMKNHDKJHLHCKFBMCOOHPOILOBKFJLCJIFPPMAEOMCINIEALPMAFFJPDGHHOEHMPDOGIGBLBAFFBLGNNFBLMMAICOFJJMIGENEOOBLPGEGAOJKEHGFJLBBNHDP',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1390678026aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script></body></html>

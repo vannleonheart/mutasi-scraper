@@ -10,12 +10,13 @@
     "test": "jest",
     "start": "node server.js",
     "example": "node ./examples/example",
-    "jsdoc": "jsdoc -c jsdoc.json -r -R README.md src -d docs/jsdoc"
+    "jsdoc": "jsdoc -c jsdoc.json -r -R README.md src -d docs"
   },
   "author": "Abdul Muttaqin",
   "license": "MIT",
   "description": "Scrap all settlement from indonesian banks",
   "dependencies": {
+    "@traceo-sdk/node": "^0.34.1",
     "axios": "^1.6.3",
     "cheerio": "^1.0.0-rc.12",
     "date-format": "^4.0.10",

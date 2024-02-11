@@ -7,7 +7,7 @@
 
 NodeJS Package for scraping settlement (mutasi) in iBank indonesia
 
-![Screenshot 2022-06-02 113138](https://github.com/fdciabdul/mutasi-scraper/assets/31664438/2dca4544-f1b6-46fd-9daa-bd97114bf203)
+<img src="/assets/logo.png" width="400"></img>
 
 
 # Mutasi Scraper
@@ -58,7 +58,7 @@ npm run example
 |BNI|✅|
 |Mandiri Cash Management|✅|
 |newBiz BRI|✅|
-| BNI Direct |✅|
+| BNI Syariah Indonesia |✅|
 
 
 # Example
@@ -138,7 +138,17 @@ const ScrapBRI = require("./lib/bank/BRI.js");
     console.log(res)
 })();
 ```
+## BSI
+```javascript
+(async () => {
+    const bsi = new ScrapBSI("corpID", "userID", "password", "nomor rekening");
+    let startDate = '01-01-2024'; 
+    let endDate = '12-01-2024';  
 
+    const result = await bsi.getStatement(startDate,endDate);
+    console.log(result);
+})()
+```
 
 ### NOTE 
 
