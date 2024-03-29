@@ -23,6 +23,7 @@ banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedal
  - Windows / Linux
  - Nodejs 16+
  - Google chrome
+ - Python & Paddle OCR ( dibutuhkan bila ingin pakai module BSI)
 
 ## Cara Install
 
@@ -58,7 +59,7 @@ npm run example
 |BNI|✅|
 |Mandiri Cash Management|✅|
 |newBiz BRI|✅|
-| BNI Syariah Indonesia |✅|
+| Bank Syariah Indonesia |✅|
 
 
 # Example
@@ -139,6 +140,14 @@ const ScrapBRI = require("./lib/bank/BRI.js");
 })();
 ```
 ## BSI
+untuk bank BSI dibutuhkan python dan paddle ocr untuk bypass captcha nya, untuk menginstall nya bisa menggunakan command berikut, pastikan di PC/Server sudah terinstall Python 3.10
+
+```bash
+python -m pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+
+```
 ```javascript
 (async () => {
     const bsi = new ScrapBSI("corpID", "userID", "password", "nomor rekening");
