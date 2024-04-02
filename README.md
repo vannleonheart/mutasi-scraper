@@ -214,7 +214,7 @@ guys karna saya tidak punya akun ibanking dari beberapa bank yang error , jika k
 # Code By
  Abdul Muttaqin
 # CP 
-taqin2731@gmail.com
+ taqin2731@gmail.com
 
 
 
