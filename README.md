@@ -68,7 +68,7 @@ npm run example
 
 ```javascript
 
-const {ScrapBCA} = require('mutasi-scraper');
+import {ScrapBCA} from 'mutasi-scraper';
 
 const user = 'USER';
 const pass = 'PASS';
@@ -96,7 +96,7 @@ const scraper = new ScrapBCA(user, pass, {
 ## BNI
 
 ```javascript
-const {ScrapBBNI} = require('mutasi-scraper');
+import {ScrapBNI} from 'mutasi-scraper';
 const user = 'USER';
 const pass = 'PASS';
 const scraper = new ScrapBCA(user, pass, {
@@ -119,7 +119,7 @@ const scraper = new ScrapBCA(user, pass, {
 
 ```javascript
 
-const ScrapBRI = require("./lib/bank/BRI.js");
+import {ScrapBRI} from 'mutasi-scraper';
 
 (async () => {
     const bca = new ScrapBRI("corpID", "userID","password","nomor rekening","wit.ai apikey");
@@ -131,7 +131,7 @@ const ScrapBRI = require("./lib/bank/BRI.js");
 
 ```javascript
 
-const ScrapBRI = require("./lib/bank/BRI.js");
+import {ScrapMCM} from 'mutasi-scraper';
 
 (async () => {
     const mandiri = new ScrapMCM("corpID", "userID","password","nomor rekening");
@@ -149,6 +149,7 @@ pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
 
 ```
 ```javascript
+import {ScrapBSI} from 'mutasi-scraper';
 (async () => {
     const bsi = new ScrapBSI("corpID", "userID", "password", "nomor rekening");
     let startDate = '01-01-2024'; 

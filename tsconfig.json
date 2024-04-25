@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es2018",                           // Set the JavaScript version for emitted JavaScript and included library files
+      "module": "commonjs",                         // CommonJS modules are used for Node.js
+      "lib": ["es2018", "dom"],                     // Include standard library files for ES2018 and the DOM
+      "outDir": "./dist",                           // The directory to output the compiled files to
+      "rootDir": "./src",                           // The root directory of your source files
+      "strict": true,                               // Enable all strict type-checking options
+      "esModuleInterop": true,                      // Enable interoperability between CommonJS and ES Modules
+      "forceConsistentCasingInFileNames": true,     // Ensure file casing is consistent in imports
+      "resolveJsonModule": true                     // Allow importing of .json files
+    },
+    "include": [
+      "src/**/*",
+    ],
+    "exclude": [
+      "node_modules",                               
+    ]
+  }
