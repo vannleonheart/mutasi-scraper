@@ -11,7 +11,6 @@ import log from "../helper/utils/Logger";
  */
 
 class ScrapBCA extends ScraperBank {
-    private norek: string;
     private log: typeof log;
     public page: any;
     private loginError: string | null;
@@ -22,13 +21,11 @@ class ScrapBCA extends ScraperBank {
      *
      * @param {string} user - The username for authentication.
      * @param {string} pass - The password for authentication.
-     * @param {string} norek - The account number.
      * @param {object} args - Additional arguments.
      * @param {boolean} [useFingerprintInjector=false] - Flag to use fingerprint injector.
      */
-    constructor(user: string, pass: string, norek: string, args: object, useFingerprintInjector: boolean = false) {
+    constructor(user: string, pass: string, args: object, useFingerprintInjector: boolean = false) {
         super(user, pass, args);
-        this.norek = norek;
         this.log = log;
         this.dialogMessage = null;
         this.loginError = null;
@@ -128,6 +125,53 @@ class ScrapBCA extends ScraperBank {
         return newPage;
     }
 
+
+    async getStatement(tglawal:number, blnawal:number, tglakhir:number, blnakhir:number) {
+        this.dialogMessage = null;
+
+        try {
+            await this.loginToBCA();
+
+            const newPage = await this.selectAccountAndSetDates(tglawal, blnawal, tglakhir, blnakhir);
+
+            const result = await newPage.evaluate(() => document.body.innerHTML);
+            let parser;
+            if (result.includes("Account Number")) {
+                parser = new BCAParser(result, BCASelectors.PARSING_FIELD_ENG);
+            } else {
+                parser = new BCAParser(result, BCASelectors.PARSING_FIELD);
+            }
+            let resultsettlement = parser.parse();
+            this.log("[ LOG ] [" + this.user + "] Success get mutasi for (" + this.user + ")" + " Jumlah mutasi (" + resultsettlement.length + ")");
+            const exists = await this.checkIfReturnToLogin(newPage, BCASelectors.LOGIN_PAGE.userField);
+
+            if (exists) {
+                throw new Error("Loopback detected");
+            }
+
+            await this.logoutAndClose();
+            newPage.on("dialog", async (dialog: { accept: () => any; message: () => string | null; }) => {
+                await dialog.accept();
+                this.log("[ LOG ] [" + this.user + "] " + dialog.message());
+                this.dialogMessage = dialog.message();
+            });
+
+            return resultsettlement;
+
+        } catch (error) {
+            this.log("[ LOG ] [" + this.user + "] " + error);
+            await this.logoutAndClose();
+            return {
+                status: false,
+                error: this.dialogMessage ?? error
+            };
+        }
+    }
+
+    /**
+     * Logs out and closes the session.
+     * @async
+     */
     async logoutAndClose() {
         try {
             this.log("[ LOG ] [" + this.user + "] Logout..");
@@ -149,6 +193,15 @@ class ScrapBCA extends ScraperBank {
         });
     }
 
+    async checkIfReturnToLogin(page:any, selector:any) {
+        try {
+            const element = await this.page.$(selector);
+            return element ?? null;
+        } catch (e) {
+            this.log("[ LOG ] [" + this.user + "] " + e);
+            return false;
+        }
+    }
 }
 
 export default ScrapBCA;
